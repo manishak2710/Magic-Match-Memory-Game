@@ -1,0 +1,165 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.fade-in {
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+/* Styling for devices with a minimum width of 769px */
+@media screen and (min-width: 769px) {
+.App {
+       margin: 10px auto;
+       text-align: center;
+       margin-top: px;
+       padding: 10px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+}
+.head{
+  text-align: center;
+       margin-top: 10px;
+       padding: 10px;
+      display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 40%;
+}
+.text-container {
+  margin-right: 2px;
+  margin-top: 5px;
+  flex-basis: 20%;
+  font-weight: bold;
+}
+button{
+  background: none;
+  border: 2px solid #fff;
+  
+  border-radius: 4px;
+  color:#fff;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: '14px'; 
+  padding: 8px 16px;
+}
+button:hover{
+  background: chartreuse;
+  color: #fff;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-basis: 35%;
+   margin: 1px 0px; 
+  margin-top: 0px;
+}
+.instructions-container {
+  margin: 20px;
+  padding: auto;
+  margin-top: 2px;
+  flex-basis: 0%;
+}
+.instructions-heading {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: justify;
+}
+
+.instructions-list {
+  margin: 0;
+  padding: 10;
+  list-style: disc;
+  margin-left: 1rem;
+  width: 100%;
+  margin-right: 5%;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 1.0;
+  text-align: left;
+}
+.game-container {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  flex-basis: 65%;
+} 
+.board-container {
+  margin-right: 20px;
+  flex-basis: 65%;
+  
+}
+.card-grid{
+  margin-top: 5px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+}
+
+/* Styling for devices with a maximum width of 768px */
+@media screen and (max-width: 768px) {
+  .App {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px auto;
+   text-align: center;
+   margin-top: 20px;
+   padding: 10px;
+  }
+
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .game-container {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .instructions-container {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .instructions-heading {
+    font-size: 24px;
+  }
+
+  .instructions-list {
+    font-size: 16px;
+  }
+  
+  .container {
+    margin: 10px 0;
+  }
+
+  button {
+    font-size: 16px;
+    padding: 10px;
+  }
+}
+
+
+
+
+
+
